@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+properties:
+  configurationVersion: 0.2.0
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Microsoft Visual Studio Code Insiders
+      allowPrerelease: true
+    settings:
+      id: Microsoft.VisualStudioCode.Insiders
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Visual Studio Community 2022 Preview
+      allowPrerelease: true
+    settings:
+      id: Microsoft.VisualStudio.2022.Community.Preview
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Git
+      allowPrerelease: true
+    settings:
+      id: Git.Git
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: PowerShell
+      allowPrerelease: true
+    settings:
+      id: Microsoft.PowerShell
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Sysinternals Suite
+      allowPrerelease: true
+    settings:
+      id: 9P7KNL5RWT25
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: PowerToys (Preview)
+      allowPrerelease: true
+    settings:
+      id: Microsoft.PowerToys
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Oh My Posh
+      allowPrerelease: true
+    settings:
+      id: JanDeDobbeleer.OhMyPosh
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Alpine WSL
+      allowPrerelease: true
+    settings:
+      id: 9P804CRF0395
+      source: msstore

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+properties:
+  resources:
+  - directives:
+      allowPrerelease: true
+      description: Sysinternals Suite
+    settings:
+      source: msstore
+      id: 9P7KNL5RWT25
+    resource: Microsoft.WinGet.DSC/WinGetPackage
+  - directives:
+      allowPrerelease: true
+      description: Alpine WSL
+    settings:
+      source: msstore
+      id: 9P804CRF0395
+    resource: Microsoft.WinGet.DSC/WinGetPackage
+  configurationVersion: 0.2.0
